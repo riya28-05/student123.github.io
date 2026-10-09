@@ -1,18 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My College Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College | Learn. Grow. Lead.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Welcome to My College</h1>
-    <p>This website is created for my URL naming practical.</p>
 
-    <h2>College Pages</h2>
-    <ul>
-        <li><a href="students.html">Student Login</a></li>
-        <li><a href="faculty.html">Faculty Page</a></li>
-        <li><a href="courses.html">Course Information</a></li>
-        <li><a href="results.html">Examination Results</a></li>
-    </ul>
+<body>
+
+    <div class="topbar">
+        Welcome to My College — Your Future Starts Here!
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🎓 My College</a>
+
+            <button class="menu-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="results.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">YOUR FUTURE STARTS HERE</span>
+
+            <h1>Dream Big.<br>
+                <span>Learn More.</span><br>
+                Achieve More.
+            </h1>
+
+            <p>
+                Welcome to My College! Explore exciting courses,
+                meet our faculty, discover opportunities, and
+                take the next step towards your future.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="courses.html" class="btn">Explore Courses →</a>
+                <a href="students.html" class="btn btn-light">Student Portal</a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="graduation">🎓</div>
+            <h2>Learn Beyond Limits</h2>
+            <p>Discover your potential and build your future.</p>
+
+            <div class="mini-stats">
+                <div>
+                    <h3>25+</h3>
+                    <p>Courses</p>
+                </div>
+
+                <div>
+                    <h3>40+</h3>
+                    <p>Faculty</p>
+                </div>
+
+                <div>
+                    <h3>100%</h3>
+                    <p>Possibilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <span class="badge">EXPLORE OUR CAMPUS</span>
+            <h2>Everything You Need, In One Place</h2>
+            <p>Discover the different sections of our college website.</p>
+        </div>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-icon">👨‍🎓</div>
+                <h3>Students</h3>
+                <p>Find student resources, campus information, and useful guidance.</p>
+                <a href="students.html">Explore Students →</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">👩‍🏫</div>
+                <h3>Faculty</h3>
+                <p>Learn about our academic departments and teaching community.</p>
+                <a href="faculty.html">Meet Our Faculty →</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>Courses</h3>
+                <p>Explore subjects and discover learning opportunities.</p>
+                <a href="courses.html">View Courses →</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📝</div>
+                <h3>Results</h3>
+                <p>Visit the examination results section and try the demo form.</p>
+                <a href="results.html">Check Results →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Your Journey Begins Today!</h2>
+        <p>Explore your interests and take the first step towards your goals.</p>
+        <a href="courses.html" class="btn btn-yellow">Discover Your Path →</a>
+    </section>
+
+    <footer>
+        <h3>🎓 My College</h3>
+        <p>Learn. Grow. Lead.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="students.html">Students</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="courses.html">Courses</a>
+            <a href="results.html">Results</a>
+        </div>
+
+        <p class="copyright">© 2026 My College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
