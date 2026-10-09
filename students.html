@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students | My College</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Student Login</h1>
-    <p>Welcome to the student portal.</p>
-    <a href="index.html">Home</a>
+
+    <div class="topbar">Welcome to the Student Portal!</div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🎓 My College</a>
+
+            <button class="menu-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="students.html">Students</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="results.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <span class="badge">STUDENT LIFE</span>
+        <h1>Welcome, Students!</h1>
+        <p>Your college journey is full of possibilities. Make the most of it.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <h2>Student Resources</h2>
+            <p>Everything you need to make your college experience better.</p>
+        </div>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-icon">📅</div>
+                <h3>Academic Calendar</h3>
+                <p>Keep track of important academic dates, holidays, and examinations.</p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h3>Study Resources</h3>
+                <p>Organize your learning and explore helpful academic resources.</p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎭</div>
+                <h3>Clubs & Activities</h3>
+                <p>Discover college clubs, cultural activities, and technical events.</p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📝</div>
+                <h3>Examination Results</h3>
+                <p>Visit the results page to try the sample result lookup form.</p>
+                <a href="results.html">Visit Results →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Learn Something New?</h2>
+        <p>Explore the courses available on our website.</p>
+        <a href="courses.html" class="btn btn-yellow">Explore Courses →</a>
+    </section>
+
+    <footer>
+        <h3>🎓 My College</h3>
+        <p>Learn. Grow. Lead.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="courses.html">Courses</a>
+            <a href="results.html">Results</a>
+        </div>
+
+        <p class="copyright">© 2026 My College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
