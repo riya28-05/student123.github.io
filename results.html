@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Examination Results</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Results | My College</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Examination Results</h1>
-    <p>Welcome to the examination results page.</p>
-    <a href="index.html">Home</a>
+
+    <div class="topbar">My College Examination Portal</div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🎓 My College</a>
+
+            <button class="menu-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a class="active" href="results.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <span class="badge">EXAMINATION PORTAL</span>
+        <h1>Check Your Results</h1>
+        <p>Use the sample form below to try the examination results interface.</p>
+    </section>
+
+    <section class="section">
+        <div class="result-container">
+
+            <div class="result-icon">📝</div>
+
+            <h2>Student Result Lookup</h2>
+
+            <p class="result-description">
+                Enter your details below to test the demonstration form.
+            </p>
+
+            <form id="resultForm">
+
+                <label for="studentName">Student Name</label>
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="rollNumber">Roll Number</label>
+                <input
+                    type="text"
+                    id="rollNumber"
+                    placeholder="Enter your roll number"
+                    required
+                >
+
+                <label for="semester">Semester</label>
+                <select id="semester" required>
+                    <option value="">Select your semester</option>
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                    <option>Semester 6</option>
+                    <option>Semester 7</option>
+                    <option>Semester 8</option>
+                </select>
+
+                <button type="submit" class="btn result-button">
+                    Submit Details →
+                </button>
+
+            </form>
+
+            <div id="resultMessage" class="result-message" role="status"></div>
+
+            <p class="demo-note">
+                Note: This is a demonstration only. It does not retrieve official
+                marks or store student information.
+            </p>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>🎓 My College</h3>
+        <p>Learn. Grow. Lead.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="students.html">Students</a>
+            <a href="faculty.html">Faculty</a>
+            <a href="courses.html">Courses</a>
+        </div>
+
+        <p class="copyright">© 2026 My College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
