@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Faculty Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty | My College</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Our Faculty</h1>
-    <p>Welcome to the college faculty page.</p>
-    <a href="index.html">Home</a>
+
+    <div class="topbar">Meet the People Who Inspire Us!</div>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🎓 My College</a>
+
+            <button class="menu-toggle" aria-label="Toggle navigation"
+                    aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a class="active" href="faculty.html">Faculty</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="results.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <span class="badge">OUR ACADEMIC COMMUNITY</span>
+        <h1>Meet Our Faculty</h1>
+        <p>Learn from experienced educators who help students discover their potential.</p>
+    </section>
+
+    <section class="section">
+        <div class="section-heading">
+            <h2>Our Departments</h2>
+            <p>Explore the academic departments at My College.</p>
+        </div>
+
+        <div class="card-container">
+
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Computer Science</h3>
+                <p>Programming, software development, databases, and artificial intelligence.</p>
+                <span class="coming-soon">Faculty Directory Coming Soon</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Business & Management</h3>
+                <p>Business strategy, entrepreneurship, marketing, and leadership.</p>
+                <span class="coming-soon">Faculty Directory Coming Soon</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🔬</div>
+                <h3>Science & Mathematics</h3>
+                <p>Scientific concepts, mathematical reasoning, and analytical thinking.</p>
+                <span class="coming-soon">Faculty Directory Coming Soon</span>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Design & Media</h3>
+                <p>Creativity, visual communication, digital design, and storytelling.</p>
+                <span class="coming-soon">Faculty Directory Coming Soon</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Knowledge Starts With Curiosity.</h2>
+        <p>Explore the courses offered by our academic departments.</p>
+        <a href="courses.html" class="btn btn-yellow">Browse Courses →</a>
+    </section>
+
+    <footer>
+        <h3>🎓 My College</h3>
+        <p>Learn. Grow. Lead.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="students.html">Students</a>
+            <a href="courses.html">Courses</a>
+            <a href="results.html">Results</a>
+        </div>
+
+        <p class="copyright">© 2026 My College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
