@@ -1,0 +1,181 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | My College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="portal-body">
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🎓 My College</a>
+            <a href="index.html" class="portal-home">← Main Website</a>
+        </nav>
+    </header>
+
+    <!-- LOGIN SECTION -->
+    <section id="loginSection" class="portal-login">
+        <div class="portal-login-card">
+            <div class="portal-big-icon">🎓</div>
+            <h1>Student Portal</h1>
+            <p>Login to explore your college dashboard.</p>
+
+            <form id="loginForm">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId"
+                       placeholder="Enter student ID" required>
+
+                <label for="studentPassword">Password</label>
+                <input type="password" id="studentPassword"
+                       placeholder="Enter any demo password" required>
+
+                <button class="btn portal-submit" type="submit">
+                    Login to Portal →
+                </button>
+            </form>
+
+            <p class="portal-note">
+                Demo only: enter any student ID and password.
+                No real account is checked.
+            </p>
+        </div>
+    </section>
+
+    <!-- DASHBOARD SECTION -->
+    <main id="dashboardSection" class="portal-dashboard" hidden>
+
+        <div class="portal-welcome">
+            <div>
+                <span class="badge">STUDENT DASHBOARD</span>
+                <h1>Welcome, <span id="welcomeName">Student</span>!</h1>
+                <p>Manage your academic information in one place.</p>
+            </div>
+            <button id="logoutButton" class="btn portal-logout">
+                Logout ↗
+            </button>
+        </div>
+
+        <div class="portal-layout">
+
+            <!-- SIDEBAR MENU -->
+            <aside class="portal-sidebar">
+                <h3>Student Menu</h3>
+                <a href="#dashboard" class="portal-menu-link"> Dashboard</a>
+                <a href="#attendance" class="portal-menu-link">Attendance</a>
+                <a href="#fees" class="portal-menu-link">Fees</a>
+                <a href="#results" class="portal-menu-link"> Results</a>
+                <a href="#documents" class="portal-menu-link"> Downloads</a>
+                <a href="#profile" class="portal-menu-link"> Profile</a>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <div class="portal-content">
+
+                <section id="dashboard" class="portal-panel">
+                    <h2>Overview</h2>
+                    <p class="portal-muted">
+                        Select a service to explore its function.
+                    </p>
+
+                    <div class="portal-stats">
+                        <article class="portal-stat">
+                            <span></span>
+                            <h3>Attendance</h3>
+                            <p>View attendance records</p>
+                            <a href="#attendance">Open service →</a>
+                        </article>
+
+                        <article class="portal-stat">
+                            <span></span>
+                            <h3>Fee Details</h3>
+                            <p>View fee information</p>
+                            <a href="#fees">Open service →</a>
+                        </article>
+
+                        <article class="portal-stat">
+                            <span></span>
+                            <h3>Examination Results</h3>
+                            <p>View sample results</p>
+                            <a href="#results">Open service →</a>
+                        </article>
+
+                        <article class="portal-stat">
+                            <span></span>
+                            <h3>Documents</h3>
+                            <p>Download a sample notice</p>
+                            <a href="#documents">Open service →</a>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="attendance" class="portal-panel">
+                    <h2> Attendance</h2>
+                    <p>Service: Check student attendance records.</p>
+                    <div class="portal-info">
+                        <strong>Demo attendance: 90%</strong>
+                        <p>This is sample information, not an official record.</p>
+                    </div>
+                </section>
+
+                <section id="fees" class="portal-panel">
+                    <h2>Fee Details</h2>
+                    <p>Service: View college fee information.</p>
+                    <div class="portal-info">
+                        <strong>Sample fee status: Information available</strong>
+                        <p>No real payment is processed by this demo.</p>
+                    </div>
+                </section>
+
+                <section id="results" class="portal-panel">
+                    <h2>📝 Examination Results</h2>
+                    <p>Service: View sample examination information.</p>
+                    <div class="portal-info">
+                        <strong>Sample result: Demo only</strong>
+                        <p>Official marks are not available on this website.</p>
+                        <a href="results.html" class="btn">
+                            Open Results Page →
+                        </a>
+                    </div>
+                </section>
+
+                <section id="documents" class="portal-panel">
+                    <h2> Download Documents</h2>
+                    <p>Service: Download a sample college notice.</p>
+                    <div class="portal-info">
+                        <p>Sample file: College Notice</p>
+                        <a class="btn"
+                           href="data:text/plain;charset=utf-8,MY%20COLLEGE%0ASample%20college%20notice%20for%20the%20student%20portal%20assignment."
+                           download="college-notice.txt">
+                            Download Sample Notice ↓
+                        </a>
+                    </div>
+                </section>
+
+                <section id="profile" class="portal-panel">
+                    <h2> Student Profile</h2>
+                    <p>Service: View student information.</p>
+                    <div class="portal-info">
+                        <p><strong>Student ID:</strong>
+                           <span id="profileId">Demo Student</span></p>
+                        <p><strong>Course:</strong> Sample Course</p>
+                        <p><strong>Portal type:</strong> Demonstration</p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <footer class="portal-footer">
+            <p>© 2026 My College | Student Portal Assignment</p>
+            <p>Educational demo — no official student data is used.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
