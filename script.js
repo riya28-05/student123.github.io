@@ -38,3 +38,45 @@ if (resultForm) {
         message.classList.add("show");
     });
 }
+```javascript
+// STUDENT PORTAL DEMO LOGIN
+
+const loginForm = document.getElementById("loginForm");
+const loginSection = document.getElementById("loginSection");
+const dashboardSection = document.getElementById("dashboardSection");
+const logoutButton = document.getElementById("logoutButton");
+
+if (loginForm && loginSection && dashboardSection) {
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const studentId =
+            document.getElementById("studentId").value.trim();
+
+        if (!studentId) {
+            return;
+        }
+
+        document.getElementById("welcomeName").textContent = studentId;
+        document.getElementById("profileId").textContent = studentId;
+
+        loginSection.hidden = true;
+        dashboardSection.hidden = false;
+
+        window.scrollTo(0, 0);
+    });
+}
+
+// LOGOUT
+
+if (logoutButton && loginSection && dashboardSection) {
+    logoutButton.addEventListener("click", function () {
+        dashboardSection.hidden = true;
+        loginSection.hidden = false;
+
+        loginForm.reset();
+        window.scrollTo(0, 0);
+    });
+}
+```
+
